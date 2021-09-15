@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General styles */
+body{
+  font-family: 'Roboto';
+}
+
+.card{
+  background-color: #1A1D28;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 50px;
+}
+/* Header */
 .header-bg {
   background-color: black;
 }
@@ -11,4 +27,15 @@
 .simulatorsunbox{
   background-color: #11131B;
   height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.simulatorsunbox .card-intro{
+  margin: 30px;
+}
+
+.simulatorsunbox .card-intro img{
+  max-width: 350px;
 }
