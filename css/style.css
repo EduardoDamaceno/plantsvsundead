@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* ------------------------------ Index ------------------------------ */
 
 /* General styles */
 body{
   font-family: 'Roboto';
+}
+
+a{
+  text-decoration: none;
 }
 
 .card{
@@ -11,8 +17,12 @@ body{
   font-weight: 700;
   text-align: center;
   border-radius: 10px;
-  padding: 10px 50px;
+  padding: 10px 0px 10px 50px;
+  display: flex;
+  align-content: flex-start;
+  
 }
+
 /* Header */
 .header-bg {
   background-color: black;
@@ -22,20 +32,267 @@ body{
   margin: 0 auto;
   max-width: 950px;
   padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.simulatorsunbox{
+.nav a{
+ color: #6a748e;
+ font-size: 1em;
+ margin: 0 0px;
+ position: relative;
+}
+
+.box{
+  margin: 7px;
+}
+
+/* Section Intro */
+
+.section-intro{
   background-color: #11131B;
-  height: 100vh;
-  padding: 10px;
+  padding: 20px 50px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
-.simulatorsunbox .card-intro{
+.section-intro .card-intro{
   margin: 30px;
 }
 
-.simulatorsunbox .card-intro img{
+.section-intro .card-intro img{
   max-width: 350px;
+}
+
+/* ------------------------------ Open SunBox ------------------------------ */
+
+.card-rewards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  margin: 0 40px 0 100px;
+  
+}
+
+.card-percentage{
+  color: white;
+  font-weight: 700;
+}
+
+/* Header */
+.js .active{
+  color: white;
+}
+
+.active::after{
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  top: 36px;
+  left: 28px;
+  background: #b8ee5b;
+}
+
+/* Card Sun Box */
+
+
+.card-sunbox{
+  background-color: #fdc25b;
+  border-radius: 20px;
+  padding: 7px;
+  border: 1px solid #684029;
+  margin: 100px 0px;
+  max-height: 355px;
+  box-shadow: 5px 5px 10px rgb(22, 22, 22);
+}
+
+.card-sunbox__image{
+  background-color: #ee9448;
+  border-radius: 14px;
+}
+
+.card-sunbox__image img{
+  width: 200px;
+}
+
+.card-sunbox__title{
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #44485C;
+  text-align: left;
+  margin: 7px 0;
+}
+
+.card-sunbox__paragraph{
+  font-weight: 400;
+  color: #44485C;
+  text-align: left;
+  max-width: 300px;
+  line-height: 1.5em;
+  margin: 0px 15px 0px 0px;
+}
+
+.card-sunbox__counter{
+  background-color: #ee9448;
+  color: #44485C;
+  margin: 10px auto 10px auto;
+  border-radius: 5px;
+  width: 65px;
+  font-weight: 700;
+}
+
+.card-sunbox__button{
+  margin: 0 0 10px 0;
+  background: #71c638;
+  color: white;
+  border: 2px solid #31462D;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-weight: 600;
+
+}
+
+/* Card Rewards General Style */
+
+.card-rewards__style{
+  background: #ee9448;
+  margin: 10px 10px;
+  border-radius: 15px;
+  padding: 20px 50px;
+  box-shadow: 5px 5px 10px rgb(22, 22, 22);
+}
+
+.card-rewards__style img{
+  width: 65px;
+}
+
+/* Card Baby Sapling */
+
+.card-baby .card-percentage{
+  margin: -10px 0 0 -100px;
+}
+
+.card-baby img{
+  margin: 10px 0 0 0;
+}
+
+.card-baby__score{
+  background-color: #cc732a;
+  color: #44485C;
+  margin: 10px auto 10px auto;
+  border-radius: 5px;
+  width: 65px;
+  font-weight: 700;
+}
+
+/* Crown Water */
+.card-crownwater{
+  padding: 20px 11px 0px 10px;
+}
+
+.card-crownwater .card-percentage{
+  margin: -10px 0 0 100px;
+}
+
+.card-crownwater__paragraphs{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-crownwater__paragraphs p:first-child{
+  margin: 10px 5px 0 0px;
+}
+
+.card-crownwater__paragraphs p:last-child{
+  margin: 10px 0 0 5px;
+}
+
+.card-crownwater img{
+  margin: 20px 10px 10px 10px;
+  width: 50px;
+}
+
+.card-crownwater__score1, .card-crownwater__score2{
+  background-color: #cc732a;
+  color: #44485C;
+  border-radius: 5px;
+  width: 65px;
+  font-weight: 700;
+}
+
+/* Card Pot */
+
+.card-pot{
+  padding: 20px 50px;
+}
+
+.card-pot .card-percentage{
+  margin: -10px 0 0 -100px;
+}
+
+.card-pot img{
+  margin: 35px 0 12px 0;
+}
+
+.card-pot__score{
+  background-color: #cc732a;
+  color: #44485C;
+  border-radius: 5px;
+  width: 65px;
+  font-weight: 700;
+}
+
+/* Card Mama */
+
+.card-mama .card-percentage{
+  margin: -10px 0 0 100px;
+}
+
+.card-mama{
+  padding: 20px 15px 20px 15px;
+}
+
+.card-mama img{
+  margin: 5px 0;
+  width: 85px;
+}
+
+.card-mama__score{
+  background-color: #cc732a;
+  color: #44485C;
+  border-radius: 5px;
+  width: 65px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0 36px;
+}
+
+/* Card Seed */
+
+.card-seed{
+  padding: 20px 55px;
+  margin: 0 0 0 101px;
+}
+
+.card-seed .card-percentage{
+  margin: -10px 0 0 0;
+}
+
+.card-seed img{
+  width: 55px;
+  margin: 15px 0 10px 5px;
+}
+
+.card-seed__score{
+  background-color: #cc732a;
+  color: #44485C;
+  border-radius: 5px;
+  width: 65px;
+  font-weight: 700;
+  text-align: center;
 }
