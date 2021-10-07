@@ -8,6 +8,11 @@ body{
 }
 
 a{
+  color: rgb(116, 116, 116); 
+  text-decoration: none;
+}
+
+a:visited{
   text-decoration: none;
 }
 
@@ -17,10 +22,10 @@ a{
   font-weight: 700;
   text-align: center;
   border-radius: 10px;
-  padding: 10px 0px 10px 50px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   align-content: flex-start;
-  
+  flex-wrap: wrap;
 }
 
 /* Header */
@@ -48,24 +53,63 @@ a{
   margin: 7px;
 }
 
+.header__language{
+  color: rgb(116, 116, 116);
+  cursor: pointer;
+}
+
+.activeLang{
+  color: white;
+}
+
 /* Section Intro */
 
 .section-intro{
   background-color: #11131B;
-  padding: 20px 50px;
+  padding: 20px 40px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .section-intro .card-intro{
-  margin: 30px;
+  margin: 60px 20px 70px 20px;
+  padding: 10px 10px;
+}
+
+.section-intro .card-intro p{
+  padding: 0 200px;
+  margin: 20px 0;
+  display: block;
 }
 
 .section-intro .card-intro img{
   max-width: 350px;
+  margin: 10px auto 10px auto;
 }
 
+.section-intro .card-intro .donation{
+  text-transform: uppercase;
+  margin: 20px auto 30px auto;
+}
+
+.section-intro .card-intro .wallet{
+  margin: 0 auto 30px auto;
+  background: #71c638;
+  color: white;
+  border: 2px solid #31462D;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-weight: 600;  
+}
+
+.section-intro .card-intro .contact{
+  padding: 0 300px;
+  margin:  0 auto 10px auto;
+  display: block;
+  
+}
 /* ------------------------------ Open SunBox ------------------------------ */
 
 .card-rewards{
@@ -104,7 +148,7 @@ a{
   border-radius: 20px;
   padding: 7px;
   border: 1px solid #684029;
-  margin: 100px 0px;
+  margin: 50px 0px 100px 50px;
   max-height: 355px;
   box-shadow: 5px 5px 10px rgb(22, 22, 22);
 }
@@ -168,6 +212,20 @@ a{
 
 .card-rewards__style img{
   width: 65px;
+}
+
+.card-rewards .wallet{
+  position: relative;
+  top: -80px;
+  right: 430px;
+  margin: 0px auto 10px auto;
+  background: #71c638;
+  color: white;
+  border: 2px solid #31462D;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-weight: 600;  
 }
 
 /* Card Baby Sapling */

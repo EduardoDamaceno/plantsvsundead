@@ -1,3 +1,5 @@
+/* Sun Box Openning */
+
 function initCounter(){
   const buttonSunBox = document.querySelector(".card-sunbox__button")
   const counter = document.querySelector(".card-sunbox__counter")
@@ -39,3 +41,59 @@ function initSweepstake(){
   buttonSunBox.addEventListener('click', sweepstake)
 }
 initSweepstake()
+
+/* Change Language */
+
+
+function initLanguage() {
+  let language = {
+    eng: {
+      cardSunBox: "A magical that harnesses energy from sun. Open it to find useful items inside and maybe a valuable surprise if you are lucky.",
+      textWallet:"Wallet: 0xec5d268C3F7E2A5205f14B32D22906e2d2FD03A6"
+    },
+    ptBR: { 
+      cardSunBox: "Uma caixa mágica com uma armadura de energia vinda do sol. Abra para achar itens úteis e talvez uma surpresa valiosa se você tiver sorte.",
+      textWallet: "Carteira: 0xec5d268C3F7E2A5205f14B32D22906e2d2FD03A6"
+    }
+  }
+
+  const textSunBox = document.querySelector(".card-sunbox__paragraph")
+  const lang = document.querySelectorAll(".header__language a")
+  const ptBR = document.querySelector(".header__language--pt-br")
+  const en = document.querySelector(".header__language--en")
+  const textWallet = document.querySelector(".wallet")
+  
+
+  ptBR.classList.add("activeLang")
+
+  function changeptBr() {
+    textSunBox.textContent = language.ptBR.cardSunBox;
+    textWallet.textContent = language.ptBR.textWallet;
+  }
+
+  function changeEN(){
+    textSunBox.textContent = language.eng.cardSunBox;
+    textWallet.textContent = language.eng.textWallet;
+  }
+
+  en.addEventListener("click", changeEN)
+  ptBR.addEventListener("click", changeptBr)
+
+  /* Enable/Disable*/
+  function activeLang(index){
+    lang.forEach((e) => {
+      e.classList.remove("activeLang")
+    })
+    lang[index].classList.add("activeLang")
+  }
+
+  lang.forEach((lang, index) => {
+    lang.classList.remove("active")
+    lang.addEventListener('click', () => {
+      activeLang(index)
+    })
+  })
+}
+
+initLanguage()
+
