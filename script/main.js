@@ -49,11 +49,11 @@ function initLanguage() {
   let language = {
     eng: {
       cardSunBox: "A magical that harnesses energy from sun. Open it to find useful items inside and maybe a valuable surprise if you are lucky.",
-      textWallet:"Wallet: 0xec5d268C3F7E2A5205f14B32D22906e2d2FD03A6"
+      textWallet:"Wallet: 0x6B71F58016FdaDaB15B981481D3d02c43705496a"
     },
     ptBR: { 
       cardSunBox: "Uma caixa mágica com uma armadura de energia vinda do sol. Abra para achar itens úteis e talvez uma surpresa valiosa se você tiver sorte.",
-      textWallet: "Carteira: 0xec5d268C3F7E2A5205f14B32D22906e2d2FD03A6"
+      textWallet: "Carteira: 0x6B71F58016FdaDaB15B981481D3d02c43705496a"
     }
   }
 

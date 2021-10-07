@@ -27,13 +27,13 @@ function initLanguage(){
     eng: {
       textCardIntro: "Hello, gardeners of virtual plants! This website was made by a fan, with the objective of making you try your luck with sunbox and, maybe, start thinking if it's worth it to open 100 sunboxes instead of trading it for a seed.",
       textCardIntroDonation: "Also, to help with the project, leave a donation!",
-      textCardIntroWallet: "Wallet: 0xec5d268C3F7E2A5205f14B32D22906e2d2FD03A6",
+      textCardIntroWallet: "Wallet: 0x6B71F58016FdaDaB15B981481D3d02c43705496a",
       textCardIntroContact:"Contact: Blade1YT#3298"
     },
     ptBR: { 
       textCardIntro: "Olá, criadores de plantas virtuais! Esse site foi feito por um fã, com o intuito de fazer vocês testarem a sorte de vocês na sunbox e, talvez, começar a pensar se vale a pena abrir 100 sunbox ao invés de trocar por uma seed.",
       textCardIntroDonation: "E para ajudar o projeto deixe uma doação!",
-      textCardIntroWallet: "Carteira: 0xec5d268C3F7E2A5205f14B32D22906e2d2FD03A6",
+      textCardIntroWallet: "Carteira: 0x6B71F58016FdaDaB15B981481D3d02c43705496a",
       textCardIntroContact: "Contato: Blade1YT#3298",
     }
 
