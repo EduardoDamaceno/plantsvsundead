@@ -62,14 +62,48 @@ a:visited{
   color: white;
 }
 
+/* Pvu Price */
+
+.pvu{
+  top: 100px;
+  left: 0;
+  position: absolute;
+  color: white;
+  margin: 0 auto;
+  
+  background-color: #32384d;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.price-pvu{
+  background-color: #212533;
+  padding: 4px 7px;
+  border-bottom-right-radius: 5px;
+}
+
+.icon-pvu{
+  width: 30px;
+  padding: 8px 7px;
+}
+
+/* Icon-pvu Sunbox */
+
+.icon-pvu-sunbox{
+  width: 30px;
+  padding: 8px 7px;
+  margin: 0 0 0 5px;
+}
+
 /* Section Intro */
 
 .section-intro{
   background-color: #11131B;
-  padding: 20px 40px;
+  padding: 5px 40px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  
 }
 
 .section-intro .card-intro{
@@ -85,7 +119,7 @@ a:visited{
 
 .section-intro .card-intro img{
   max-width: 350px;
-  margin: 10px auto 10px auto;
+  margin: 15px auto 10px auto;
 }
 
 .section-intro .card-intro .donation{
@@ -94,29 +128,41 @@ a:visited{
 }
 
 .section-intro .card-intro .wallet{
-  margin: 0 auto 30px auto;
+  margin: 5px auto 25px auto;
   background: #71c638;
   color: white;
   border: 2px solid #31462D;
   border-radius: 6px;
   padding: 5px 20px;
   font-size: 1em;
-  font-weight: 600;  
+  font-weight: 600;
+  cursor: pointer;  
 }
 
 .section-intro .card-intro .contact{
-  padding: 0 300px;
-  margin:  0 auto 10px auto;
+  padding: 0 30%;
+  margin:  0px auto 20px auto;
   display: block;
   
 }
 /* ------------------------------ Open SunBox ------------------------------ */
 
+
+.section-intro-sunbox{
+  background-color: #11131B;
+  padding: 20px 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
 .card-rewards{
   display: flex;
   flex-wrap: wrap;
   width: 370px;
-  margin: 0 40px 0 100px;
+  margin: 30px 40px 0 100px;
   
 }
 
@@ -148,7 +194,7 @@ a:visited{
   border-radius: 20px;
   padding: 7px;
   border: 1px solid #684029;
-  margin: 50px 0px 100px 50px;
+  margin: 55px 0px 100px 50px;
   max-height: 355px;
   box-shadow: 5px 5px 10px rgb(22, 22, 22);
 }
@@ -225,7 +271,8 @@ a:visited{
   border-radius: 6px;
   padding: 5px 20px;
   font-size: 1em;
-  font-weight: 600;  
+  font-weight: 600; 
+  cursor: pointer; 
 }
 
 /* Card Baby Sapling */
