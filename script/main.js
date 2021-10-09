@@ -110,14 +110,3 @@ function initCopyWallet(){
 }
 
 initCopyWallet()
-
-
-const searchPrice = async() => {
-  const contract = '0x31471e0791fcdbe82fbf4c44943255e923f1b794'
-  const url = `https://api.pancakeswap.info/api/v2/tokens/${contract}`
-  const data = await fetch(url)
-  const address = await data.json();
-  const price = parseFloat(address.data.price).toFixed(2)
-  document.querySelector(".price-pvu").innerHTML += price
-  
-}
