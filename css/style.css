@@ -112,7 +112,7 @@ a:visited{
 }
 
 .section-intro .card-intro p{
-  padding: 0 200px;
+  padding: 0 25%;
   margin: 20px 0;
   display: block;
 }
@@ -140,7 +140,7 @@ a:visited{
 }
 
 .section-intro .card-intro .contact{
-  padding: 0 30%;
+  padding: 0 40%;
   margin:  0px auto 20px auto;
   display: block;
   
@@ -154,7 +154,7 @@ a:visited{
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  
+  height: 100vh;
 }
 
 
