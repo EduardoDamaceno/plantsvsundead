@@ -101,7 +101,8 @@ a:visited{
   border-radius: 6px;
   padding: 5px 20px;
   font-size: 1em;
-  font-weight: 600;  
+  font-weight: 600;
+  cursor: pointer;  
 }
 
 .section-intro .card-intro .contact{
@@ -225,7 +226,8 @@ a:visited{
   border-radius: 6px;
   padding: 5px 20px;
   font-size: 1em;
-  font-weight: 600;  
+  font-weight: 600; 
+  cursor: pointer; 
 }
 
 /* Card Baby Sapling */
